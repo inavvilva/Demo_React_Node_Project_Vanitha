@@ -1,0 +1,35 @@
+.App {
+  margin-top: 2%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+}
+
+@media (max-width : 609px) {
+
+.App {
+  width: 95% !important;
+}
+  
+}
+
+@media (max-width : 1200px) and (min-width: 779px) {
+
+  .App {
+    width: 60% !important;
+  }
+  
+}
+
+@media (max-width : 780px) and (min-width : 610px) {
+  
+  .App {
+    width: 80%;
+  }
+}
+
+.bg {
+  background-color: aliceblue;
+}
+

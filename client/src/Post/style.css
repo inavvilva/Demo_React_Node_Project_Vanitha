@@ -1,0 +1,125 @@
+
+
+.postCard {
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 3px 10px #e3dada;
+}
+.avatarAlignment {
+    display: block !important;  
+    float: left; 
+}
+.textAlignLeft {
+    float: left;
+    margin-left: 10px;
+}
+.dateTime {
+    text-align: initial;
+    color: grey;
+    font-size: small;
+}
+.postPadding {
+    padding: 15px 0px 0px 0px;
+}
+.imageAlignment {
+    width: 100%;
+}
+.alignStart {
+    text-align: start;
+}
+.alignEnd {
+    text-align: end;
+}
+.alignCenter {
+    text-align: center;
+}
+.textposition {
+    position: relative;
+    bottom: 8px;
+}
+.actionContainer {
+    margin-top: 10px;
+    margin-bottom: -7px;
+    font-size: 15px;
+}
+.commentTextField {
+    width: 85%;
+}
+.commentTextField .MuiOutlinedInput-root{
+    border-radius: 20px;
+}
+.avatarcommentAlignment {
+    display: block !important;  
+    float: left; 
+    margin-top: 7px;   
+}
+.commentTextfieldContainer {
+    margin-top: 20px !important;
+}
+.commentSection:hover {
+    cursor: pointer;
+    color: grey;
+
+}
+.commentsView {
+    background: #e4e4e4;
+    border-radius: 10px;
+    padding: 1px 10px;
+    width: 100%;
+}
+.commentViewHeader {
+    text-align: initial;
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.commentViewText {
+    text-align: initial;
+    font-size: 13px;
+    margin-top: -8px;
+    word-break: break-all;
+}
+.commandsPadding {
+    padding: 10px;
+}
+.commentAvatar {
+    width: 35px !important;
+    height: 35px !important;
+}
+.rightAlignment {
+    float: right;
+    margin: 0px;
+    font-size: small;
+    cursor: pointer;
+}
+.rightAlignment:hover {
+    color: gray;
+}
+.leftAlignment {
+    float: left;
+    margin:0px;
+    font-size: small;
+    margin-left: 8px;
+}
+.replyTextField {
+    width: 87%;
+    margin-left: 12px !important;
+}
+.replyTextField .MuiOutlinedInput-root{
+    border-radius: 20px;
+}
+.replyViewContainer {
+    margin-left: 20px;
+}
+.replyView {
+    margin-left: 13%;
+}
+.commentClick {
+    text-align: end;
+    color: grey;
+    font-size: 14px;
+}
+.commentClick:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
