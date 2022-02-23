@@ -138,6 +138,7 @@ const PostView = (props) => {
                                                     setTimeout(() => {
                                                         commentRef.current.scrollIntoView();
                                                         commentRef.current.focus();
+                                                        setReplyCommentId(0);
                                                     }, 500);
                                                  
                                                    }}
@@ -265,6 +266,7 @@ const PostView = (props) => {
                                 }}
                                 onChange={(e) => {
                                     setComment(e.target.value);
+                                    setReplyCommentId(0);
                                 }}
                                 InputProps={{
                                     endAdornment: (
