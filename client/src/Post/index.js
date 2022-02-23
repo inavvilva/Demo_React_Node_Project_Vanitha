@@ -129,10 +129,10 @@ const PostView = (props) => {
                    </div>
                    <Grid container className="actionContainer">
                        <Grid item xs={4} className="alignStart">
-                       <FavoriteBorderIcon /> <span className="textposition"> Like</span>
+                       <FavoriteBorderIcon className='iconStyle' /> <span className="textposition"> Like</span>
                        </Grid>
                        <Grid item xs={4} className="alignCenter commentSection" >
-                        <ChatBubbleOutlineIcon /> <span 
+                        <ChatBubbleOutlineIcon className='iconStyle' /> <span 
                                                    className='textposition' 
                                                    onClick={(e) => {                                                          setShowComments(true);
                                                     setTimeout(() => {
@@ -147,7 +147,7 @@ const PostView = (props) => {
                                                    </span>
                        </Grid>
                        <Grid item xs={4} className="alignEnd">
-                        <RedoIcon /><span className='textposition'>Share</span>
+                        <RedoIcon className='iconStyle' /><span className='textposition'>Share</span>
                        </Grid>
                    </Grid>
                </Grid>
@@ -177,7 +177,7 @@ const PostView = (props) => {
                                                 }, 500);
                                                 }}
                                                 >Reply</p>
-                                            <p className='leftAlignment'>{ele.date}</p>
+                                            <p className='leftAlignment iconStyle'>{ele.date}</p>
 
                                             {/* ----------------- Reply Section ------------------*/}                                    
                                             
@@ -195,7 +195,7 @@ const PostView = (props) => {
                                                                 className='rightAlignment' 
                                                             
                                                                     >Reply</p>
-                                                                <p className='leftAlignment'>{replyEle.replydate}</p> 
+                                                                <p className='leftAlignment iconStyle'>{replyEle.replydate}</p> 
                                                                 </div>                                      
                                                         </div>
                                                     )) : ''}

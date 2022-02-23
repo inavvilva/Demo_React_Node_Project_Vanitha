@@ -123,3 +123,6 @@
     cursor: pointer;
     text-decoration: underline;
 }
+.iconStyle {
+    color: grey;
+}
