@@ -112,7 +112,7 @@ const PostView = (props) => {
                <Grid item xs={12} >
                 <Avatar alt="cat" src="/assets/cat_image1.jpg" className='avatarAlignment' />
                 <span className='textAlignLeft'>
-                    Animal Lover 
+                    Night Fury 
                    <div className='dateTime'>
                        2 days ago
                    </div>
@@ -164,7 +164,7 @@ const PostView = (props) => {
                                         <Avatar alt="cat" src="/assets/cat_image1.jpg" className='avatarAlignment commentAvatar' />                                 
                                             <div className='textAlignLeft commentTextField'>
                                             <div className='commentsView'>
-                                            <p className='commentViewHeader'>Animal Lover</p>                                    
+                                            <p className='commentViewHeader'>Night Fury</p>                                    
                                             <p className='commentViewText'>{ele.comment}</p> 
                                             </div> 
                                             <p 
@@ -176,7 +176,7 @@ const PostView = (props) => {
                                                     replyRef.current[index].focus();
                                                 }, 500);
                                                 }}
-                                                >Reply</p>
+                                                >{ele.replyList.length > 0 ? (ele.replyList.length === 1 ? '1 Reply' : ele.replyList.length+' Replies') :'Reply'}</p>
                                             <p className='leftAlignment iconStyle'>{ele.date}</p>
 
                                             {/* ----------------- Reply Section ------------------*/}                                    
@@ -188,12 +188,18 @@ const PostView = (props) => {
                                                             <Avatar alt="cat" src="/assets/cat_image1.jpg" className='avatarAlignment commentAvatar' />
                                                             <div className='replyView'>
                                                             <div className='commentsView'>
-                                                                <p className='commentViewHeader'>Animal Lover</p>                                    
+                                                                <p className='commentViewHeader'>Night Fury</p>                                    
                                                                 <p className='commentViewText'>{replyEle.reply}</p> 
                                                                 </div> 
                                                                 <p 
                                                                 className='rightAlignment' 
-                                                            
+                                                                onClick={(e) => {
+                                                                    setReplyCommentId(ele.commentId);
+                                                                    setTimeout(() => {
+                                                                        replyRef.current[index].scrollIntoView();
+                                                                        replyRef.current[index].focus();
+                                                                    }, 500);
+                                                                    }}
                                                                     >Reply</p>
                                                                 <p className='leftAlignment iconStyle'>{replyEle.replydate}</p> 
                                                                 </div>                                      
